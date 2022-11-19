@@ -1,0 +1,34 @@
+.logo,
+.logo--accent {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    line-height: 1.17;
+    text-decoration-line: none;
+    font-size: 24px;
+    
+    @include desktop {
+        font-size: 26px;
+    }
+}
+
+.head__logo {
+    color: var(--logo-text-color);
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @include tablet {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.logo--accent {
+    color: var(--accent-text-color);
+}
+
+.footer__logo {
+    color: var(--hero-text-color);
+
+    display: block;
+    margin-bottom: 20px;
+}

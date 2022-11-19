@@ -1,0 +1,44 @@
+.features {
+    @extend %list;
+
+    @include tablet {
+        gap: 30px;
+    }
+    
+}
+
+.features__item {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @include tablet {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        flex-basis: calc((100% - 90px) / 4);
+        // margin-right: 30px;
+        
+        // &:nth-child(4) {
+        //     margin-right: 0;
+        }
+}
+
+
+.features__box {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--team-bg-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.features__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
