@@ -1,11 +1,10 @@
 .footer {
   background-color: var(--hero-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   @include tablet {
     display: flex;
     flex-wrap: wrap;

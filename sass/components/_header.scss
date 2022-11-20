@@ -119,6 +119,25 @@
     fill: currentColor;
 }
 
+.contacts__icon--envelope {
+    width: 14px; 
+    height: 10px;
+
+    @include desktop {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.contacts__icon--smartphone {
+    width: 10px;
+    height: 14px;
+
+    @include desktop {
+        height: 16px;
+    }
+}
+
 .site-nav__link, .contacts__link {
     @extend %link
 }

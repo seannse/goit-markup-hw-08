@@ -10,6 +10,10 @@
 .features__item {
     &:not(:last-child) {
         margin-bottom: 30px;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
     }
 
     @include tablet {
@@ -35,6 +39,14 @@
     background-color: var(--team-bg-color);
     border-radius: 4px;
     margin-bottom: 30px;
+}
+
+.features__title {
+    text-align: center;
+
+    @include tablet {
+        text-align: start;
+    }
 }
 
 .features__text {
